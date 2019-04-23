@@ -5,8 +5,19 @@
 # ....
 # e.g. 6th fibonacci number is 8
 
-# Time complexity: ?
-# Space complexity: ?
+# Time complexity: O(n) - linear, because the number of loops is determined by the value of the input integer, "n"
+# Space complexity: Constant, because the algorithm only every track 2 values, regardless
+# the input integer.
 def fibonacci(n)
-  raise NotImplementedError
+  if n == nil || n < 0
+    raise ArgumentError, "Cannot find fibonacci of an irrational number"
+  else
+    fib = 0
+    x = 1
+    n.times do
+      fib += x
+      x = (fib - x)
+    end
+    return fib
+  end
 end
