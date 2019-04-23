@@ -10,7 +10,7 @@
 # the input integer.
 def fibonacci(n)
   if n == nil || n < 0
-    raise ArgumentError, "Cannot find fibonacci of an irrational number"
+    raise ArgumentError, "The fibonacci number does not exist for #{n}"
   else
     fib = 0
     x = 1
