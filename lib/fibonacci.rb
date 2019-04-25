@@ -5,8 +5,8 @@
 # ....
 # e.g. 6th fibonacci number is 8
 
-# Time complexity: O(n) - linear, because the number of loops is determined by the value of the input integer, "n"
-# Space complexity: Constant, because the algorithm only every track 2 values, regardless
+# Time complexity: O(n) - linear, because the number of loops is determined by the value of the input integer, "n."
+# Space complexity: Constant, because the algorithm only ever tracks 2 values, regardless of
 # the input integer.
 def fibonacci(n)
   if n == nil || n < 0
